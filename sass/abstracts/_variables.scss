@@ -1,0 +1,30 @@
+:root {
+  //  TEXT COLOR
+  --color-text-primary: #6b7177;
+  --text-color-primary: #212326;
+  --header-text-color: #42474c;
+  --dropdown-fill: #828a91;
+
+  //BACKGROUND COLOR
+  --color-background: #fff;
+  --header-color: #fbf7ed;
+  --hero-bg-color: #004c3f;
+  --dropdown-hover-color: #f0f1f2;
+
+  //BUTTON COLOR
+  --button-color: #008060;
+  --closet-color: #002e25;
+  --shadow-focus: 0 0 0.1875rem 0.1875rem rgba(0, 128, 96, 0.5);
+  --button-hover-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.25);
+  --button-focus: 0 0 0.1875em 0.1875em rgba(0, 128, 96, 0.5);
+  --button-hover-color: #004c3f;
+  --button-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+
+  // Border
+  --after-border-bottom: 0.0625rem solid #d2d5d9;
+
+  --input-shadow: 0 0 0 0.0625rem #6b7177;
+  --bottom-text-color: #b6babf;
+  --border-color: 0.0625rem solid rgba(210, 213, 217, 0.1);
+  --list-border-bottom: 2px solid #002e25;
+}

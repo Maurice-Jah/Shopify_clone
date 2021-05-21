@@ -1,0 +1,36 @@
+.grid--first {
+  display: flex;
+  justify-content: space-between;
+}
+
+.grid {
+  padding-left: 5rem;
+  padding-right: 5rem;
+
+  @media only screen and (max-width: 46.75em) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &__item {
+    padding-left: 1.125rem;
+    padding-right: 1.125rem;
+  }
+}
+
+// Help grid
+.grid-help {
+  display: flex;
+  justify-content: space-around;
+
+  @media only screen and (max-width: 46.75em) {
+    flex-direction: column;
+    width: 95%;
+  }
+}
+
+// Footer lists
+.help__image-00 {
+  height: 100%;
+  width: 100%;
+}

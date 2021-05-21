@@ -1,0 +1,31 @@
+.play__icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 1rem;
+  margin-left: -0.3125rem;
+  margin-bottom: -0.3125rem;
+  fill: inherit;
+}
+
+// footer icons
+.icon-1 {
+  width: 1rem;
+  height: 1rem;
+  margin-bottom: 0.1875rem;
+  fill: #ffffff;
+  transition: fill 300ms ease-in-out;
+  display: inline-block;
+  vertical-align: middle;
+  // border: 0.125rem solid red;
+}
+
+.icon-2 {
+  // border: 0.125rem solid red;
+  margin-bottom: 0.1875rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  fill: #ffffff;
+  transition: fill 300ms ease-in-out;
+  display: inline-block;
+  vertical-align: middle;
+}

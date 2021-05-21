@@ -1,0 +1,134 @@
+.dropdown-icon {
+  width: 1.5625rem;
+  height: 1.5625rem;
+  transform: rotate(270deg);
+  fill: var(--dropdown-fill);
+}
+
+.dropdown {
+  width: 15.75rem;
+  min-height: 11.703125rem;
+  border: 0.0625rem solid #d2d5d9;
+  border-radius: 0.25rem;
+  position: absolute;
+  top: 4rem;
+  background: white;
+  z-index: 2000;
+  left: 1.125rem;
+  box-shadow: 0 0.3125rem 1.875rem 0.3125rem rgba(66, 71, 76, 0.1);
+
+  opacity: 0;
+  visibility: hidden;
+
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &-start {
+    position: relative;
+
+    &__list {
+      position: relative;
+
+      &-item {
+        position: relative;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        transition-property: width, background-color;
+        transition-duration: 300ms;
+        margin-top: 0.3125rem;
+        margin-bottom: 0.3125rem;
+
+        &:hover {
+          background-color: var(--dropdown-hover-color);
+        }
+
+        [class$="line"] {
+          border-bottom: var(--after-border-bottom);
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        &--btn {
+          width: 100%;
+          border: none;
+          background-color: transparent;
+        }
+
+        &--btn a {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          font-size: 0.9375rem;
+          line-height: 1.5rem;
+          font-weight: 700;
+          letter-spacing: normal;
+          color: var(--text-color-primary);
+          padding-top: 0.5rem;
+          padding-bottom: 0.5rem;
+        }
+      }
+      &-item::before {
+        content: "";
+        background-color: var(--button-color);
+        width: 0.1875rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        transform: scale(0);
+      }
+
+      &-item:hover::before {
+        transform: scale(1);
+      }
+    }
+  }
+}
+
+// mini download for start
+.mini {
+  position: absolute;
+  left: 16.875rem;
+  left: 5rem;
+  border-left: 0;
+  box-shadow: 0 0 0 0 rgba(66, 71, 76, 0.1);
+  height: 11.9375rem;
+
+  p {
+    font-size: 0.875rem;
+    color: rgb(67, 79, 93);
+    line-height: 1.5;
+    padding: 0.703125rem 1.5625rem 0.703125rem 0.9375rem;
+  }
+
+  .dropdown-start__list-item {
+    padding-left: 0.9375rem;
+  }
+}
+
+// Mini downlad for sell
+.mini-sell {
+  position: absolute;
+  left: 16.8125rem;
+  left: 5rem;
+  height: 20.5rem;
+
+  p {
+    font-size: 0.875rem;
+    color: rgb(67, 79, 93);
+    line-height: 1.5;
+    padding: 0.703125rem 1.5625rem 0.703125rem 0.9375rem;
+  }
+}
+
+//
+
+.dropdown__start {
+  // &:target {
+  //   opacity: 1;
+  //   visibility: visible;
+  // }
+}

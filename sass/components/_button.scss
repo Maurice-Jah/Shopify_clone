@@ -1,0 +1,110 @@
+.green_button {
+  display: inline-block;
+  padding: 0.75rem 1.1rem;
+  border-radius: 0.25rem;
+  font-family: ShopifySans, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.133;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: var(--button-shadow);
+  background-color: var(--button-color);
+  color: var(--color-background) !important;
+  border: 0.0625rem solid transparent;
+  margin-left: 0.9375rem;
+  transition-property: background-color, border-color, box-shadow, color;
+  transition: 150ms ease;
+
+  &:hover {
+    box-shadow: var(--button-hover-shadow);
+    background-color: var(--button-hover-color);
+  }
+
+  &:focus {
+    box-shadow: var(--shadow-focus);
+    outline: 0;
+  }
+}
+
+// Hero play button
+.hero__media {
+  position: relative;
+
+  &-play {
+    position: absolute;
+    right: 5.3125rem;
+    bottom: 1.5625rem;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      color: var(--color-background);
+      padding: 0.125rem;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &--icon {
+      border: 0.125rem solid var(--color-background);
+      background-color: var(--color-background);
+      border-radius: 0.125rem;
+      width: 1.875rem;
+      height: 1.875rem;
+      margin-right: 0.625rem;
+
+      .play-icon {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &--text {
+      font-size: 1rem;
+      line-height: 1.5;
+      font-weight: 700;
+    }
+  }
+}
+
+// For the pause in homepillars
+
+.homepage-pillars__sell-video {
+  position: relative;
+  &--pause {
+    position: absolute;
+    bottom: 3rem;
+    right: 0;
+    width: 2.1875rem;
+    height: 2.1875rem;
+
+    @media only screen and (max-width: 46.75em) {
+      left: -4rem;
+    }
+
+    .video-pause {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+// For the green button pause
+.map__container-image {
+  position: relative;
+
+  &--pause {
+    position: absolute;
+    bottom: 10rem;
+    left: 10rem;
+    width: 2.1875rem;
+    height: 2.1875rem;
+
+    .video-pause__green {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

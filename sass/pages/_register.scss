@@ -1,0 +1,62 @@
+// Remove after:target
+.trial {
+  position: absolute;
+  top: 0;
+  padding-top: 30px;
+  height: 100%;
+  width: 100%;
+  z-index: 3500;
+  background-color: #212326;
+
+  opacity: 0;
+  visibility: hidden;
+
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.trial-inputs {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 0 auto;
+
+  &__email {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  &__password {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  &__text {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  &__button {
+    padding: 20px;
+    margin: 0 auto;
+    border: 0;
+
+    margin-right: 10px;
+  }
+}
+
+.trial-text__main {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+}
+
+.trial-close {
+  color: white;
+  font-size: 50px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 80px;
+}
